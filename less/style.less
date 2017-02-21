@@ -1,0 +1,231 @@
+@border-color: #36afb3;
+@less-gray: #ececec;
+@more-gray: #626262;
+@link-color: #05787c;
+@common-color: #fff;
+@total-width: 991px;
+
+/* 公共变量*/
+@border: 1px solid @border-color; 
+
+/* 不变类*/
+.text-lt{
+	text-align: left;
+}
+.text-rt{
+	text-align: right;
+}
+.text-cen{
+	text-align: center;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+.clear:after{
+	display: block;
+	height: 0;
+	clear: both;
+	content: "\200B";
+}
+.clear{
+	*zoom: 1;
+}
+.addPoint{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* 带参数的调用方法*/
+body{
+	width: @total-width;
+	// overflow-x: hidden;
+	min-width: @total-width - 200px;
+	margin: 0 auto;
+}
+.word(@size,@color){
+	font-size: @size;
+	color: @color;
+}
+.front(@content, @value){
+	-webkit-@{content}: @value;
+	-moz-@{content}: @value;
+	-ms-@{content}: @value;
+	-o-@{content}: @value;
+}
+.line-height(@size){
+	line-height: @size;
+	text-align: center;
+}
+.z-index(@number){
+	z-index: @number;
+}
+.relative{
+	position: relative;
+}
+.fixed(@top,@right,@buttom,@left){
+	position: fixed;
+	top: @top;
+	right: @right;
+	buttom: @button;
+	left: @left;
+}
+.absolute(@top,@right,@buttom,@left){
+	position: absolute;
+	top: @top;
+	right: @right;
+	buttom: @button;
+	left: @left;
+}
+.margin(...){
+	margin: @arguments;
+}
+.padding(...){
+	padding: @arguments;
+}
+.bg-img(@url){
+	background-image: url(@url);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+
+.img-box(@width,@height){
+	width: @width;
+	height: @height;
+	position: relative;
+	overflow: hidden;
+}
+.img-box{
+	.img-box(985px,323px);
+}
+.img-wrapper{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 0;
+}
+.img-wrapper{
+	li{
+		float: left;
+	}
+}
+.img-index(@bottom){
+	position: absolute;
+	bottom: @bottom;
+	width: 100%;
+	text-align: center;
+}
+.img-index{
+	.img-index(10px);
+}
+.img-index{
+	li{
+		width: 20px;
+		height: 5px;
+		background-color: #fff;
+		margin: 0 10px;
+		display: inline-block;
+		cursor: pointer;
+	}
+}
+.btn{
+	 span{
+		display: block;
+		width: 20px;
+		height: 50px;
+		background-color: rgba(255,255,255,.7);
+		color: #fff;
+		position: absolute;
+		top: 50%;
+	}
+}
+.btn{
+	display: none;
+}
+.btn{
+	.prev{
+		left: 0;
+	}
+} 
+.btn{
+	.next{
+		right: 0;
+	}
+}
+
+/* 可改的样式部分*/
+.clear{
+	height: auto;
+	.top-nav{
+		background-color: @border-color;
+		width: 610px;
+		height: 40px;
+		border: @border;
+		.line-height(35px);
+		.front(border-bottom-left-radius, 35px);
+	}
+}
+.stringle{
+	float: left;
+	width: 80px;
+	height: 35px;
+	border-top: 20px solid @border-color;
+	border-right: 20px solid transparent;
+}
+.top-nav h2{
+	float:right;
+}
+h1{
+	.word(45px,@border-color);
+}
+h2{
+	.word(30px,#fff);
+	.line-height(35px);
+}
+h3{
+	.word(25px,#fff);
+}
+h5{
+	.word(22px,#fff);
+}
+h6{
+	.word(20px,@border-color);
+}
+h2 img{
+	vertical-align: baseline;
+	margin-left: 40px;
+}
+header hgroup h6,header hgroup h1{
+	width: 300px;
+	.margin(0px,267px,0px,101px);
+	text-align: center;
+}
+.nav-wrapper{
+	width: 1070px;
+	height: 82px;
+	padding-top: 32px;
+	padding-left: 85px;
+	margin-left: -85px;
+	.bg-img('../dist/image/bar.png');
+}
+.nav-wrapper ul{
+	.clear;
+}
+.nav-wrapper ul li{
+	display: inline-block;
+	width: 120px;
+	.line-height(50px);
+	height: 50px;
+}
+.nav-wrapper ul li a{
+	.word(21px,#fff);
+}
+.img-index .active{
+	background: @border-color;
+}

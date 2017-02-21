@@ -1,0 +1,187 @@
+/* 公共变量*/
+/* 不变类*/
+.text-lt {
+  text-align: left;
+}
+.text-rt {
+  text-align: right;
+}
+.text-cen {
+  text-align: center;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clear:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: "\200B";
+}
+.clear {
+  *zoom: 1;
+}
+.addPoint {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 带参数的调用方法*/
+body {
+  width: 991px;
+  min-width: 791px;
+  margin: 0 auto;
+}
+.relative {
+  position: relative;
+}
+.img-box {
+  width: 985px;
+  height: 323px;
+  position: relative;
+  overflow: hidden;
+}
+.img-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 0;
+}
+.img-wrapper li {
+  float: left;
+}
+.img-index {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.img-index li {
+  width: 20px;
+  height: 5px;
+  background-color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.btn span {
+  display: block;
+  width: 20px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+  position: absolute;
+  top: 50%;
+}
+.btn {
+  display: none;
+}
+.btn .prev {
+  left: 0;
+}
+.btn .next {
+  right: 0;
+}
+/* 可改的样式部分*/
+.clear {
+  height: auto;
+}
+.clear .top-nav {
+  background-color: #36afb3;
+  width: 610px;
+  height: 40px;
+  border: 1px solid #36afb3;
+  line-height: 35px;
+  text-align: center;
+  -webkit-border-bottom-left-radius: 35px;
+  -moz-border-bottom-left-radius: 35px;
+  -ms-border-bottom-left-radius: 35px;
+  -o-border-bottom-left-radius: 35px;
+}
+.stringle {
+  float: left;
+  width: 80px;
+  height: 35px;
+  border-top: 20px solid #36afb3;
+  border-right: 20px solid transparent;
+}
+.top-nav h2 {
+  float: right;
+}
+h1 {
+  font-size: 45px;
+  color: #36afb3;
+}
+h2 {
+  font-size: 30px;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+}
+h3 {
+  font-size: 25px;
+  color: #fff;
+}
+h5 {
+  font-size: 22px;
+  color: #fff;
+}
+h6 {
+  font-size: 20px;
+  color: #36afb3;
+}
+h2 img {
+  vertical-align: baseline;
+  margin-left: 40px;
+}
+header hgroup h6,
+header hgroup h1 {
+  width: 300px;
+  margin: 0px 267px 0px 101px;
+  text-align: center;
+}
+.nav-wrapper {
+  width: 1070px;
+  height: 82px;
+  padding-top: 32px;
+  padding-left: 85px;
+  margin-left: -85px;
+  background-image: url('../dist/image/bar.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.nav-wrapper ul {
+  *zoom: 1;
+  height: auto;
+}
+.nav-wrapper ul .top-nav {
+  background-color: #36afb3;
+  width: 610px;
+  height: 40px;
+  border: 1px solid #36afb3;
+  line-height: 35px;
+  text-align: center;
+  -webkit-border-bottom-left-radius: 35px;
+  -moz-border-bottom-left-radius: 35px;
+  -ms-border-bottom-left-radius: 35px;
+  -o-border-bottom-left-radius: 35px;
+}
+.nav-wrapper ul li {
+  display: inline-block;
+  width: 120px;
+  line-height: 50px;
+  text-align: center;
+  height: 50px;
+}
+.nav-wrapper ul li a {
+  font-size: 21px;
+  color: #fff;
+}
+.img-index .active {
+  background: #36afb3;
+}

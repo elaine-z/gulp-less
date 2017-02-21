@@ -1,0 +1,84 @@
+﻿body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+margin:0;
+padding:0;
+}
+body,button,input,select,textarea {
+-webkit-text-size-adjust:none;
+font:12px/1.5 Tahoma,Arial,sans-serif
+}
+h1,h2,h3,h4,h5,h6 {
+font-size:100%;
+}
+address,cite,dfn,em,var {
+font-style:normal;
+}
+ul,ol,li {
+list-style:none;
+}
+a {
+text-decoration:none;
+color:#000;
+}
+legend {
+color:#000;
+}
+fieldset,img {
+border:0;
+vertical-align:top;
+}
+section,article,aside,header,footer,nav,dialog,figure {
+display:block;
+}
+figure {
+margin:0;
+}
+button,input,select,textarea {
+font-size:100%;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+html {
+overflow-y:scroll;
+}
+.clear {
+display:block;
+height:0;
+overflow:hidden;
+clear:both;
+}
+.clearfix:after {
+content:'\20';
+display:block;
+height:0;
+clear:both;
+}
+.clearfix {
+*zoom:1;
+}
+/*清除浮动*/
+a:link,a:visited {
+text-decoration:none;
+}
+a:hover,a:active {
+text-decoration:none;
+}
+a {
+outline:none;
+}
+.none {
+display:none;
+}
+.block {
+display:block;
+}
+.noBg {
+background:none !important;
+}
+.noBd {
+border:none !important;
+}
+.noPd {
+padding:0 !important;
+}
