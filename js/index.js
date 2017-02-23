@@ -1,4 +1,4 @@
-window.onload = function() {
+﻿window.onload = function() {
 	function slideImage(imgWrapper, btnObj, pointObj, speed) {
 		var speed = parseInt(speed);
 		var wrapperWidth = parseInt($(imgWrapper).parent().width());
@@ -86,7 +86,6 @@ window.onload = function() {
 				$(pointObj).find('li').eq(i).addClass('active').siblings().removeClass('active');
 			}
 		}, speed)
-		this.timer = null;
 
 		//鼠标移入，暂停自动播放，移出，开始自动播放
 		$(imgWrapper).parent().hover(function() {
@@ -110,7 +109,6 @@ window.onload = function() {
 					$(pointObj).find('li').eq(i).addClass('active').siblings().removeClass('active');
 				}
 			}, speed)
-			timer = null;
 		})
 	}
 	slideImage('#img', '#btn', '#img-index', 3000);
