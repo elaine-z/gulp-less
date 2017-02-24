@@ -22,7 +22,7 @@
 				i = 1;
 				$(imgWrapper).css({
 					left: 0
-				}); //保证无缝轮播，设置left值
+				}); 
 			};
 
 			$(imgWrapper).stop().animate({
